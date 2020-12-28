@@ -25,13 +25,22 @@ const quotes = [
 ];
 
 const button = document.querySelector("#quoteBtn");
+const body = document.querySelector("body");
 const quote = document.querySelector("#quote");
 const author = document.querySelector("#quoteAuthor");
+
+let colors = ["rgb(3,19,33)", "rgb(134,13,22)", "orange", "#0EE351"];
 
 button.addEventListener("click", displayQuote);
 
 function displayQuote() {
-  let picker = Math.floor(Math.random() * quotes.length);
-  quote.innerHTML = quotes[picker].name;
-  author.innerHTML = quotes[picker].quote;
+  let quotePicker = Math.floor(Math.random() * quotes.length);
+  quote.innerHTML = quotes[quotePicker].name;
+  author.innerHTML = quotes[quotePicker].quote;
+}
+
+button.addEventListener("click", changeColor);
+function changeColor() {
+  let colorPicker = Math.floor(Math.random() * colors.length);
+  body.style.backgroundColor = colors[colorPicker];
 }

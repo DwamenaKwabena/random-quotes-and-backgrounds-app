@@ -15,15 +15,15 @@ body {
   padding: 30px;
   margin: auto;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: #3330309f;
   flex: 0 0 80%;
 }
 
 #quoteBtn {
-  background-color: #9b4f0d;
+  background-color: #cce6ff;
   border: none;
   border-radius: 5px;
-  color: #fff;
+  color: #473c3c;
   font-size: 15px;
   font-weight: bold;
   outline: none;
@@ -32,7 +32,7 @@ body {
 }
 
 #quoteBtn:hover {
-  color: #1f0f03;
+  color: #080808;
 }
 
 #quoteBtn:active {
@@ -40,8 +40,8 @@ body {
 }
 
 blockquote {
-  background-color: #f9f9f9;
-  border-left: 50px solid #9b4f0d;
+  background-color: #cce6ff;
+  border-left: 50px solid #181717;
   margin: 1.5rem;
   padding: 0.5rem;
 }
